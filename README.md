@@ -11,6 +11,6 @@ PyRex is a tool for testing python regular expression.
 
 ## To-Do
 - [ ] Fill groups in real-time in pattern areas
-- [ ] Fill in the matched groups in the test string area in real time
+- [ ] Fill the matched groups in the test string area in real time
 - [ ] Display match results in real time
 - [ ] Code generator
