@@ -360,7 +360,7 @@ class Ui_MainWindow(object):
         self.ProcessPushButton.setShortcut(_translate("MainWindow", "Return"))
         self.label_2.setText(_translate("MainWindow", "TEST STRING"))
         self.TestStringTextEdit.setPlaceholderText(_translate("MainWindow", "insert your test string here"))
-        self.label_3.setText(_translate("MainWindow", "REGULAR EXPRESSION"))
+        self.label_3.setText(_translate("MainWindow", "MATCH INFORMATION"))
 import src_rc
 
 
