@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SheetWindow</class>
+ <widget class="QMainWindow" name="SheetWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>379</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PyRex Regex Sheet</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="src.qrc">
+    <normaloff>:/icons/icons/windowIcon.png</normaloff>:/icons/icons/windowIcon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(225, 225, 225);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="styleSheet">
+       <string notr="true">border:No;</string>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>344</width>
+         <height>1465</height>
+        </rect>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_3">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">min-height:15;
+max-height:15;
+background-color: rgba(0, 0, 0, 0%);</string>
+            </property>
+            <property name="text">
+             <string>Regular Expression Basics</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_3">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 85, 0);
+border:No;
+height:1px</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>.</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Any character except newline</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>a</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_6">
+            <property name="text">
+             <string>The character a</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label_7">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>ab</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8">
+            <property name="text">
+             <string>The string ab</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_13">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>a|b</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_14">
+            <property name="text">
+             <string>a or b</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_11">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>a*</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_12">
+            <property name="text">
+             <string>0 or more a's</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_9">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_10">
+            <property name="text">
+             <string>Escapes a special character</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_4">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">min-height:15;
+max-height:15;
+background-color: rgba(0, 0, 0, 0%);</string>
+            </property>
+            <property name="text">
+             <string>Regular Expression Quantifiers</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_4">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 85, 0);
+border:No;
+height:1px</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_12">
+          <item>
+           <widget class="QLabel" name="label_25">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>*</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_26">
+            <property name="text">
+             <string>0 or more</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLabel" name="label_23">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_24">
+            <property name="text">
+             <string>1 or more</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_10">
+          <item>
+           <widget class="QLabel" name="label_21">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>?</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_22">
+            <property name="text">
+             <string>0 or 1</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9">
+          <item>
+           <widget class="QLabel" name="label_19">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>{2}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_20">
+            <property name="text">
+             <string>Exactly 2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <widget class="QLabel" name="label_17">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>{2, 5}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_18">
+            <property name="text">
+             <string>Between 2 and 5</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QLabel" name="label_15">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>{2,}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_16">
+            <property name="text">
+             <string>2 or more</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_13">
+          <item>
+           <widget class="QLabel" name="label_27">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>{,5}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_28">
+            <property name="text">
+             <string>Up to 5</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_19">
+          <item>
+           <widget class="QLabel" name="label_40">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>ab</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_41">
+            <property name="text">
+             <string>The string ab</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="label_39">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">min-height:15;
+max-height:15;
+background-color: rgba(0, 0, 0, 0%);</string>
+            </property>
+            <property name="text">
+             <string>Regular Expression Groups</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_5">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 85, 0);
+border:No;
+height:1px</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_18">
+          <item>
+           <widget class="QLabel" name="label_37">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>(...)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_38">
+            <property name="text">
+             <string>Capturing group</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_17">
+          <item>
+           <widget class="QLabel" name="label_35">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>(?P&lt;Y&gt;...)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_36">
+            <property name="text">
+             <string>Capturing group named Y</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_16">
+          <item>
+           <widget class="QLabel" name="label_33">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>(?:...)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_34">
+            <property name="text">
+             <string>Non-capturing group</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_15">
+          <item>
+           <widget class="QLabel" name="label_31">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\Y</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_32">
+            <property name="text">
+             <string>Match the Y'th captured group</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="QLabel" name="label_29">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>(?P=Y)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_30">
+            <property name="text">
+             <string>Match the named group Y</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_20">
+          <item>
+           <widget class="QLabel" name="label_42">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>(?#...)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_43">
+            <property name="text">
+             <string>Comment</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_28">
+          <item>
+           <widget class="QLabel" name="label_59">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>{2}</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_60">
+            <property name="text">
+             <string>Exactly 2</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="label_58">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">min-height:15;
+max-height:15;
+background-color: rgba(0, 0, 0, 0%);</string>
+            </property>
+            <property name="text">
+             <string>Regular Expression Character Classes</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_6">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 85, 0);
+border:No;
+height:1px</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_27">
+          <item>
+           <widget class="QLabel" name="label_56">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>[ab-d]</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_57">
+            <property name="text">
+             <string>One character of: a, b, c, d</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_26">
+          <item>
+           <widget class="QLabel" name="label_54">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>[^ab-d]</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_55">
+            <property name="text">
+             <string>One character except: a, b, c, d</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_25">
+          <item>
+           <widget class="QLabel" name="label_52">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>[b]</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_53">
+            <property name="text">
+             <string>Backspace character</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_24">
+          <item>
+           <widget class="QLabel" name="label_50">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\d</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_51">
+            <property name="text">
+             <string>One digit</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_23">
+          <item>
+           <widget class="QLabel" name="label_48">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\D</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_49">
+            <property name="text">
+             <string>One non-digit</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_22">
+          <item>
+           <widget class="QLabel" name="label_46">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\s</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_47">
+            <property name="text">
+             <string>One whitespace</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_21">
+          <item>
+           <widget class="QLabel" name="label_44">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\S</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_45">
+            <property name="text">
+             <string>One non-whitespace</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_30">
+          <item>
+           <widget class="QLabel" name="label_63">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\w</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_64">
+            <property name="text">
+             <string>One word character</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_29">
+          <item>
+           <widget class="QLabel" name="label_61">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\W</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_62">
+            <property name="text">
+             <string>One non-word character</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_7">
+          <item>
+           <widget class="QLabel" name="label_75">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">min-height:15;
+max-height:15;
+background-color: rgba(0, 0, 0, 0%);</string>
+            </property>
+            <property name="text">
+             <string>Regular Expression Assertions</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_7">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 85, 0);
+border:No;
+height:1px</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_39">
+          <item>
+           <widget class="QLabel" name="label_82">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>^</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_83">
+            <property name="text">
+             <string>Start of string</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_35">
+          <item>
+           <widget class="QLabel" name="label_73">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\A</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_74">
+            <property name="text">
+             <string>Start of string, ignores m flag</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_34">
+          <item>
+           <widget class="QLabel" name="label_71">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>$</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_72">
+            <property name="text">
+             <string>End of string</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_33">
+          <item>
+           <widget class="QLabel" name="label_69">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\Z</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_70">
+            <property name="text">
+             <string>End of string, ignores m flag</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_32">
+          <item>
+           <widget class="QLabel" name="label_67">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\b</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_68">
+            <property name="text">
+             <string>Word boundary</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_31">
+          <item>
+           <widget class="QLabel" name="label_65">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\B</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_66">
+            <property name="text">
+             <string>Non-word boundary</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_36">
+          <item>
+           <widget class="QLabel" name="label_76">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>(?=...)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_77">
+            <property name="text">
+             <string>Positive lookahead</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_37">
+          <item>
+           <widget class="QLabel" name="label_78">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>(?!...)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_79">
+            <property name="text">
+             <string>Negative lookahead</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_38">
+          <item>
+           <widget class="QLabel" name="label_80">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>(?&lt;=...)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_81">
+            <property name="text">
+             <string>Positive lookbehind</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_41">
+          <item>
+           <widget class="QLabel" name="label_86">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>(?&lt;!...)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_87">
+            <property name="text">
+             <string>Negative lookbehind</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_40">
+          <item>
+           <widget class="QLabel" name="label_84">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>(?()|)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_85">
+            <property name="text">
+             <string>Conditional</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_49">
+          <item>
+           <widget class="QLabel" name="label_103">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\Z</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_104">
+            <property name="text">
+             <string>End of string, ignores m flag</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_8">
+          <item>
+           <widget class="QLabel" name="label_102">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">min-height:15;
+max-height:15;
+background-color: rgba(0, 0, 0, 0%);</string>
+            </property>
+            <property name="text">
+             <string>Regular Expression Flags</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_8">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 85, 0);
+border:No;
+height:1px</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_48">
+          <item>
+           <widget class="QLabel" name="label_100">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>i</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_101">
+            <property name="text">
+             <string>Ignore case</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_47">
+          <item>
+           <widget class="QLabel" name="label_98">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>m</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_99">
+            <property name="text">
+             <string>^ and $ match start and end of line</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_46">
+          <item>
+           <widget class="QLabel" name="label_96">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>s</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_97">
+            <property name="text">
+             <string>Matches newline as well</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_45">
+          <item>
+           <widget class="QLabel" name="label_94">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>x</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_95">
+            <property name="text">
+             <string>Allow spaces and comments</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_44">
+          <item>
+           <widget class="QLabel" name="label_92">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>L</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_93">
+            <property name="text">
+             <string>Locale character classes</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_43">
+          <item>
+           <widget class="QLabel" name="label_90">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>u</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_91">
+            <property name="text">
+             <string>Unicode character classes</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_42">
+          <item>
+           <widget class="QLabel" name="label_88">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>(?iLmsux)</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_89">
+            <property name="text">
+             <string>Set flags within regex</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QLabel" name="label_115">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">min-height:15;
+max-height:15;
+background-color: rgba(0, 0, 0, 0%);</string>
+            </property>
+            <property name="text">
+             <string>Regular Expression Flags</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_9">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 85, 0);
+border:No;
+height:1px</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_54">
+          <item>
+           <widget class="QLabel" name="label_113">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\n</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_114">
+            <property name="text">
+             <string>Newline</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_53">
+          <item>
+           <widget class="QLabel" name="label_111">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\r</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_112">
+            <property name="text">
+             <string>Carriage return</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_52">
+          <item>
+           <widget class="QLabel" name="label_109">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\t</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_110">
+            <property name="text">
+             <string>Tab</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_51">
+          <item>
+           <widget class="QLabel" name="label_107">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\YYY</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_108">
+            <property name="text">
+             <string>Octal character YYY</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_50">
+          <item>
+           <widget class="QLabel" name="label_105">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\xYY</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_106">
+            <property name="text">
+             <string>Hexadecimal character YY</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QLabel" name="label_118">
+            <property name="font">
+             <font>
+              <family>Arial</family>
+              <pointsize>9</pointsize>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">min-height:15;
+max-height:15;
+background-color: rgba(0, 0, 0, 0%);</string>
+            </property>
+            <property name="text">
+             <string>Regular Expression Replacement</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="line_10">
+            <property name="styleSheet">
+             <string notr="true">background-color:rgb(255, 85, 0);
+border:No;
+height:1px</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_55">
+          <item>
+           <widget class="QLabel" name="label_116">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\g&lt;0&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_117">
+            <property name="text">
+             <string>Insert entire match</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_57">
+          <item>
+           <widget class="QLabel" name="label_121">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\g&lt;Y&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_122">
+            <property name="text">
+             <string>Insert match Y (name or number)</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_56">
+          <item>
+           <widget class="QLabel" name="label_119">
+            <property name="styleSheet">
+             <string notr="true">min-width:100px;
+max-width:100px;</string>
+            </property>
+            <property name="text">
+             <string>\Y</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_120">
+            <property name="text">
+             <string>Insert group numbered Y</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>379</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources>
+  <include location="src.qrc"/>
+ </resources>
+ <connections/>
+</ui>

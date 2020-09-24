@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="icons">
+    <file>icons/windowIcon.png</file>
+    <file>icons/code.svg</file>
+    <file>icons/info.svg</file>
+    <file>icons/logo.png</file>
+    <file>icons/sheet.svg</file>
+  </qresource>
+</RCC>
