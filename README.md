@@ -7,7 +7,7 @@
 PyRex is a tool for visual testing Python regular expression.
 <br>Based on the re python package, combined with the Qt user interface, it allows a visual display of the results of a regular expression pattern.
 
-:warning: **This is a beta version and probably contains some bugs. In that case, please [report the new issue](https://github.com/user0706/Mixer-v2/issues).**
+:warning: **This is a beta version and probably contains some bugs. In that case, please [report the new issue](https://github.com/user0706/PyRex/issues).**
 
 ## Prerequisites
 After opening the downloaded repository in cmd *(Windows)*/terminal *(Linux/MacOS)*, to install the necessary packages for PyRex operation, enter the following command:
