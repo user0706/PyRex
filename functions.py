@@ -7,7 +7,7 @@ import sys
 import re
 import random
 
-def Process(string, pattern, info):
+def Process(string, pattern, info, NoMatchesLabel):
 	'''Processes the specified regex pattern
 
 	:param pattern: Regex pattern
@@ -26,6 +26,7 @@ def Process(string, pattern, info):
 	'''
 	if pattern:
 		try:
+			NoMatchesLabel.hide()
 			regex = r"{}".format(str(pattern))
 			matches = re.finditer(regex, string, re.MULTILINE)
 			for match_num, match in enumerate(matches, start=1):
@@ -34,7 +35,9 @@ def Process(string, pattern, info):
 					group_num = group_num + 1
 					info.append(['Group '+str(group_num), str(match.start(group_num))+'-'+str(match.end(group_num)), str(match.group(group_num))])
 		except:
-			pass
+			NoMatchesLabel.show()
+	if not info:
+		NoMatchesLabel.show()
 	return info
 
 def GenerateGroupColor(color_spectrum, target):
