@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0 (4035a4fb49, 2020-05-01)"
+   sodipodi:docname="info.svg"
+   id="svg9"
+   version="1.1"
+   viewBox="0 0 24 24"
+   height="24px"
+   width="24px">
+  <metadata
+     id="metadata15">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs13" />
+  <sodipodi:namedview
+     inkscape:current-layer="svg9"
+     inkscape:window-maximized="1"
+     inkscape:window-y="-8"
+     inkscape:window-x="-8"
+     inkscape:cy="12"
+     inkscape:cx="12"
+     inkscape:zoom="22.416667"
+     showgrid="false"
+     id="namedview11"
+     inkscape:window-height="748"
+     inkscape:window-width="1280"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
+  <!-- Uploaded to SVGRepo https://www.svgrepo.com -->
+  <title
+     id="title2">ic_fluent_book_formula_information_24_regular</title>
+  <desc
+     id="desc4">Created with Sketch.</desc>
+  <g
+     style="fill:#ffffff"
+     fill-rule="evenodd"
+     fill="none"
+     stroke-width="1"
+     stroke="none"
+     id="🔍-System-Icons">
+    <g
+       style="fill:#ffffff"
+       fill-rule="nonzero"
+       fill="#212121"
+       id="ic_fluent_book_formula_information_24_regular">
+      <path
+         style="fill:#ffffff"
+         id="🎨-Color"
+         d="M18,2 C19.3807,2 20.5,3.11929 20.5,4.5 L20.5,18.75 C20.5,19.1642 20.1642,19.5 19.75,19.5 L5.5,19.5 C5.5,20.0523 5.94772,20.5 6.5,20.5 L19.75,20.5 C20.1642,20.5 20.5,20.8358 20.5,21.25 C20.5,21.6642 20.1642,22 19.75,22 L6.5,22 C5.11929,22 4,20.8807 4,19.5 L4,4.5 C4,3.11929 5.11929,2 6.5,2 L18,2 Z M18,3.5 L6.5,3.5 C5.94772,3.5 5.5,3.94772 5.5,4.5 L5.5,18 L19,18 L19,4.5 C19,3.94772 18.5523,3.5 18,3.5 Z M12.25,9 C12.6296833,9 12.9434889,9.28215687 12.9931531,9.64823019 L13,9.75 L13,14.75 C13,15.1642 12.6642,15.5 12.25,15.5 C11.8703167,15.5 11.5565111,15.2178347 11.5068469,14.8517677 L11.5,14.75 L11.5,9.75 C11.5,9.33579 11.8358,9 12.25,9 Z M12.25,6 C12.8023,6 13.25,6.44772 13.25,7 C13.25,7.55228 12.8023,8 12.25,8 C11.6977,8 11.25,7.55228 11.25,7 C11.25,6.44772 11.6977,6 12.25,6 Z" />
+    </g>
+  </g>
+</svg>
