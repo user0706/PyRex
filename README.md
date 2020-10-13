@@ -1,5 +1,5 @@
 <p align="center">
-  <img height="100" src="https://github.com/user0706/PyRex/blob/master/icons/windowIcon.png?raw=true">
+  <img height="100" src="https://github.com/user0706/PyRex/blob/master/Qt_ui/icons/windowIcon.png?raw=true">
 </p>
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/) [![python-version](https://img.shields.io/badge/Python-3.6|3.7-<COLOR>.svg)](https://www.python.org/)  [![Qt](https://img.shields.io/badge/GUI%20by-Qt%20Designer-orange)](https://doc.qt.io/qt-5/qtdesigner-manual.html)  [![PyPI license](https://img.shields.io/pypi/l/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/) [![PyPI status](https://img.shields.io/pypi/status/ansicolortags.svg)](https://pypi.python.org/pypi/ansicolortags/)
