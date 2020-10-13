@@ -35,7 +35,7 @@ python main.py
 - Test_string highlighting features
 
 ## Screenshots
-![](https://github.com/user0706/PyRex/blob/feature/test-string-highlighting/Example.png?raw=true)
+![](https://github.com/user0706/PyRex/blob/master/Example.png?raw=true)
 
 ## To-Do
 - [ ] Code generator
