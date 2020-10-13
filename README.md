@@ -7,12 +7,11 @@
 PyRex is a tool for visual testing Python regular expression.
 <br>Based on the re python package, combined with the Qt user interface, it allows a visual display of the results of a regular expression pattern.
 
-:warning: **This is a beta version and probably contains some bugs. In that case, please [report the new issue](https://github.com/user0706/PyRex/issues).**
-
 ## Prerequisites
 After opening the downloaded repository in cmd *(Windows)*/terminal *(Linux/MacOS)*, to install the necessary packages for PyRex operation, enter the following command:
 ```python
 pip install -r requirements.txt --no-index --find-links file:///tmp/packages
+(if not, try pip3)
 ```
 ## How to run PyRex?
 Execute the following commands in cmd *(Windows)*/terminal *(Linux/MacOS)*:
@@ -32,13 +31,11 @@ python main.py
 ```
 
 ## What's new:
+- Regex sheet
 - Test_string highlighting features
 
 ## Screenshots
 ![](https://github.com/user0706/PyRex/blob/feature/test-string-highlighting/Example.png?raw=true)
 
 ## To-Do
-- [ ] Fill groups in real-time in pattern areas
-- [ ] Fill the matched groups in the test string area in real time
-- [ ] Display match results in real time
 - [ ] Code generator
