@@ -1,4 +1,5 @@
 from mainGUI import *
+from generator import *
 from PyQt5.QtGui     import *
 from PyQt5.QtWidgets import *
 from PyQt5.QtCore    import *
@@ -255,3 +256,16 @@ def strColorTolist(string):
 	'''
 	colorList = [int(i) for i in re.sub(r'(rgb\(|\))','',string).split(', ')]
 	return colorList[0],colorList[1],colorList[2]
+
+def GetCode(textEdit, pattern, string):
+	'''Generate code for Python regular expression based on the template
+
+	:param textEdit: The QTextEdit element carries a raw code template
+	:type textEdit: PyQt5.QtWidgets.QTextEdit
+	:param pattern: A pattern to be entered in the code template
+	:type pattern: str
+	:param string: A test string to be entered in the code template
+	:type string: str
+	'''
+	template = textEdit.toPlainText()
+	textEdit.setText(template.replace("<CHANGE_ME>pattern<CHANGE_ME>", pattern).replace("<CHANGE_ME>string<CHANGE_ME>", string))

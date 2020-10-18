@@ -1,4 +1,5 @@
 from functions import *
+from generator import *
 from mainGUI import *
 from PyQt5.QtGui     import *
 from PyQt5.QtWidgets import *
@@ -7,9 +8,6 @@ import sys
 
 import os
 import re
-
-from win32api import GetSystemMetrics
-
 
 class MyWin(QtWidgets.QMainWindow):
 	def __init__(self, parent=None):
@@ -30,7 +28,7 @@ class MyWin(QtWidgets.QMainWindow):
 		self.ui.SheetDockWidget.hide()
 		self.ui.RegexSheetPushButton.clicked.connect(self.Sheet)
 		self.SheetFlag = False
-		self.ui.CodeGeneratorPushButton.hide()
+		self.ui.CodeGeneratorPushButton.clicked.connect(self.CodeGenerator)
 		self.ui.AboutPushButton.hide()
 
 		self.ResultWidget = None
@@ -49,6 +47,8 @@ class MyWin(QtWidgets.QMainWindow):
 		self.WindowHeightFlag = 0
 
 		self.ColorList = ['rgb(198, 227, 255)','rgb(198, 233, 157)','rgb(245, 171, 165)','rgb(255, 191, 109)','rgb(193, 203, 235)','rgb(215, 253, 227)','rgb(227, 255, 172)','rgb(232, 141, 238)','rgb(207, 221, 103)','rgb(255, 172, 192)','rgb(132, 214, 238)']
+
+		self.GeneratedCode = Ui_MainWindow()
 
 	def UpdateInfo(self):
 		'''Visual display of search results'''
@@ -87,6 +87,7 @@ class MyWin(QtWidgets.QMainWindow):
 				Highlight(self.ui.TestStringTextEdit, QColor(r,g,b), hrange[0], hrange[1])
 
 	def Sheet(self):
+		'''Display regular expression cheat sheet'''
 		if not self.SheetFlag:
 			self.WindowWidthFlag = self.width()
 			self.WindowHeightFlag = self.height()
@@ -97,6 +98,17 @@ class MyWin(QtWidgets.QMainWindow):
 			self.adjustSize()
 			self.resize(self.WindowWidthFlag,self.WindowHeightFlag)
 			self.SheetFlag = False
+
+	def CodeGenerator(self):
+		'''The code for Python regular expression is generated in a new window'''
+		if not self.Pattern or not self.TestString:
+			self.ui.NoMatchesLabel.show()
+		else:
+			self.CodeGeneratorWindow = QtWidgets.QMainWindow()
+			self.gen_ui = Ui_CodeGenerator()
+			self.gen_ui.setupUi(self.CodeGeneratorWindow)
+			GetCode(self.gen_ui.textEdit, self.Pattern, self.TestString)
+			self.CodeGeneratorWindow.show()
 
 if __name__ == '__main__':
 	app = QtWidgets.QApplication(sys.argv)
