@@ -38,4 +38,4 @@ python main.py
 ![](https://github.com/user0706/PyRex/blob/master/Example.png?raw=true)
 
 ## To-Do
-- [ ] Code generator
+- [X] ~~Code generator~~
