@@ -14,7 +14,15 @@ After opening the downloaded repository in cmd *(Windows)*/terminal *(Linux/MacO
 pip install -r requirements.txt --no-index --find-links file:///tmp/packages
 (if not, try pip3)
 ```
+## Download
+[Windows XP or above]()
+
 ## How to run PyRex?
+### Using an executable file:
+Easily go through the installation process
+<hr>
+
+### Using raw repositories:
 Execute the following commands in cmd *(Windows)*/terminal *(Linux/MacOS)*:
 
 - Download repository
