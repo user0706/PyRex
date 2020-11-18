@@ -1,6 +1,7 @@
 <RCC>
   <qresource prefix="icons">
     <file>icons/windowIcon.png</file>
+    <file>icons/icon.ico</file>
     <file>icons/code.svg</file>
     <file>icons/info.svg</file>
     <file>icons/logo.png</file>
