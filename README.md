@@ -15,7 +15,7 @@ pip install -r requirements.txt --no-index --find-links file:///tmp/packages
 (if not, try pip3)
 ```
 ## Download
-[Windows XP or above]()
+[Windows XP or above](https://github.com/user0706/PyRex/releases/tag/v1.0)
 
 ## How to run PyRex?
 ### Using an executable file:
