@@ -44,3 +44,7 @@ python main.py
 
 ## Screenshots
 ![](https://github.com/user0706/PyRex/blob/master/Example.png?raw=true)
+
+## To-Do
+- [ ] support for PHP regular expression
+- [ ] support for JavaSrcript regular expression
